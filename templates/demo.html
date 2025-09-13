@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guide - Find Your Path</title>
+    <link rel="stylesheet" href="static/css/demo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="stars"></div>
+    
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">🎯</div>
+                <span>Navigate Career Change with Up-To-Date Guidance</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Discover Your</span>
+                        <span class="title-line gradient-text">Dream Career</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Unlock your potential with AI-powered career guidance. Whether you're a student or professional, we'll help you find the perfect path forward.
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="cta-primary" onclick="scrollToDetails()">Get Started</button>
+                        <button class="cta-secondary">Learn More</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                        <div class="shape shape-4"></div>
+                    </div>
+                    <div class="career-orbit">
+                        <div class="orbit-item orbit-1">💼</div>
+                        <div class="orbit-item orbit-2">🚀</div>
+                        <div class="orbit-item orbit-3">💡</div>
+                        <div class="orbit-item orbit-4">📊</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose Our Platform?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎓</div>
+                        <h3>For Students</h3>
+                        <p>Comprehensive assessments to discover your strengths and ideal career paths</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💼</div>
+                        <h3>For Professionals</h3>
+                        <p>Resume analysis and personalized job recommendations based on your skills</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>AI-Powered</h3>
+                        <p>Advanced algorithms analyze your profile for accurate career matching</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="career-showcase">
+            <div class="container">
+                <h2 class="section-title">Explore Career Domains</h2>
+                <div class="showcase-grid">
+                    <div class="showcase-card">
+                        <div class="card-image">🔭</div>
+                        <div class="card-content">
+                            <h3>Astronomy</h3>
+                            <p>Explore the cosmos and unlock the mysteries of the universe</p>
+                            <div class="card-stats">
+                                <span class="stat">High Growth</span>
+                                <span class="stat">Research Focus</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="card-image">🧬</div>
+                        <div class="card-content">
+                            <h3>Biotechnology</h3>
+                            <p>Combine biology with technology to solve real-world problems</p>
+                            <div class="card-stats">
+                                <span class="stat">Innovation</span>
+                                <span class="stat">Healthcare</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="card-image">⚗️</div>
+                        <div class="card-content">
+                            <h3>Chemical Engineering</h3>
+                            <p>Design processes that transform raw materials into useful products</p>
+                            <div class="card-stats">
+                                <span class="stat">Industry Ready</span>
+                                <span class="stat">High Demand</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="user-input-section" id="details">
+            <div class="container">
+                <div class="input-content">
+                    <div class="input-form">
+                        <h2 class="form-title">Ready to Begin Your Journey?</h2>
+                        <p class="form-subtitle">Tell us about yourself to get personalized recommendations</p>
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="path-selection">
+                            <h3>Choose Your Path</h3>
+                            <div class="path-cards">
+                                <div class="path-card" id="student-path">
+                                    <div class="path-icon">🎓</div>
+                                    <div class="path-content">
+                                        <h4>School Student</h4>
+                                        <p>Take our comprehensive assessment to discover your ideal career direction</p>
+                                        <ul class="path-features">
+                                            <li>✓ Personality assessment</li>
+                                            <li>✓ Skill evaluation</li>
+                                            <li>✓ Career roadmaps</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="path-card" id="college-path">
+                                    <div class="path-icon">💼</div>
+                                    <div class="path-content">
+                                        <h4>College Student</h4>
+                                        <p>Upload your resume for AI-powered job matching and career suggestions</p>
+                                        <ul class="path-features">
+                                            <li>✓ Resume analysis</li>
+                                            <li>✓ Job matching</li>
+                                            <li>✓ Skill recommendations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="input-visual">
+                        <div class="visual-container">
+                            <div class="chart-container">
+                                <div class="chart-title">Success Stories</div>
+                                <div class="chart-bars">
+                                    <div class="bar" style="height: 60%"><span>Career Satisfaction</span></div>
+                                    <div class="bar" style="height: 85%"><span>Job Placement</span></div>
+                                    <div class="bar" style="height: 75%"><span>Skill Match</span></div>
+                                </div>
+                            </div>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number">10K+</div>
+                                    <div class="stat-label">Students Guided</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">95%</div>
+                                    <div class="stat-label">Success Rate</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Career Guide. Empowering futures through intelligent career guidance.</p>
+        </div>
+    </footer>
+
+    <script src="static/script/demo.js"></script>
+</body>
+</html>

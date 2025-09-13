@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guide - College Students</title>
+    <link rel="stylesheet" href="static/css/clg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="particles"></div>
+    
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🎯</span>
+                Navigate Career Change with Up-To-Date Guidance
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <h1 class="banner-title">Shape Your Professional Future</h1>
+                <p class="banner-subtitle">Discover opportunities tailored to your skills</p>
+            </div>
+            <div class="banner-visual">
+                <div class="floating-elements">
+                    <div class="element element-1">💼</div>
+                    <div class="element element-2">🚀</div>
+                    <div class="element element-3">⚡</div>
+                    <div class="element element-4">🎨</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="career-options">
+        <div class="info-box">
+            <div class="info-content">
+                <h2 class="info-title">Discover Your Perfect Role</h2>
+                <p class="info-description">
+                    Upload your resume and unlock personalized career recommendations. Our AI analyzes your skills and matches you with the best opportunities in the market.
+                </p>
+                <div class="upload-container">
+                    <input type="file" id="resumeUpload" accept=".pdf" style="display: none;">
+                    <button class="upload-btn" id="drop">
+                        <span class="upload-icon">📄</span>
+                        <span class="upload-text">DROP YOUR RESUME HERE</span>
+                        <span class="upload-subtitle">PDF files only</span>
+                    </button>
+                </div>
+            </div>
+            <div class="info-decoration">
+                <div class="decoration-circle circle-1"></div>
+                <div class="decoration-circle circle-2"></div>
+                <div class="decoration-circle circle-3"></div>
+            </div>
+        </div>
+
+        <div class="career-showcase">
+            <h3 class="showcase-title">Popular Career Paths</h3>
+            <div class="career-grid">
+                <div class="career-card">
+                    <div class="card-icon">🎬</div>
+                    <div class="card-content">
+                        <h4>Animation & VFX</h4>
+                        <p>Create stunning visual experiences</p>
+                    </div>
+                </div>
+                <div class="career-card">
+                    <div class="card-icon">💻</div>
+                    <div class="card-content">
+                        <h4>Software Engineering</h4>
+                        <p>Build the future with code</p>
+                    </div>
+                </div>
+                <div class="career-card">
+                    <div class="card-icon">🎨</div>
+                    <div class="card-content">
+                        <h4>UI/UX Design</h4>
+                        <p>Design beautiful user experiences</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="job_result" class="results-container"></div>
+
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Analyzing your resume...</p>
+        </div>
+    </div>
+
+    <script src="static\script\script_clg.js"></script>
+</body>
+</html>
