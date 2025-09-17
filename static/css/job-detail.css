@@ -1,0 +1,1002 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Header */
+.site-header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.logo-icon {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+.job-detail-main {
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Job Header */
+.job-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.job-title-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.job-info {
+    flex: 1;
+}
+
+.job-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.job-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.job-tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+/* Skills Meter Section - Dark Glow Style */
+.skills-meter-section {
+    background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3e 100%);
+    backdrop-filter: blur(20px);
+    padding: 60px 40px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    box-shadow: 
+        0 25px 60px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-meter-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 20%, rgba(0, 255, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(255, 165, 0, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(255, 0, 100, 0.05) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.skills-meter-section > * {
+    position: relative;
+    z-index: 2;
+}
+
+.skills-meter-section h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 50px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.speedometer-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.speedometer {
+    position: relative;
+    width: 400px;
+    height: 280px;
+}
+
+.speedometer-gauge {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+}
+
+/* Dark Gauge Background with Neon Glow */
+.gauge-bg {
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(
+        from 180deg,
+        #0d7377 0deg 30deg,
+        #14a085 30deg 60deg,
+        #f39c12 60deg 90deg,
+        #e67e22 90deg 120deg,
+        #e74c3c 120deg 150deg,
+        #c0392b 150deg 180deg
+    );
+    border-radius: 200px 200px 0 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+        0 0 30px rgba(0, 255, 255, 0.3),
+        inset 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.gauge-bg::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: -20px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-radius: 170px 170px 0 0;
+    box-shadow: 
+        0 0 20px rgba(0, 0, 0, 0.8),
+        inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+/* Gauge Ticks */
+.gauge-bg::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    right: 35px;
+    bottom: -15px;
+    border-radius: 165px 165px 0 0;
+    background-image: 
+        repeating-conic-gradient(
+            from 180deg,
+            rgba(255, 255, 255, 0.3) 0deg 1deg,
+            transparent 1deg 9deg
+        );
+    z-index: 2;
+}
+
+/* Animated Progress Glow */
+.gauge-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(
+        from 180deg,
+        rgba(0, 255, 255, 0.6) 0deg,
+        rgba(255, 165, 0, 0.6) calc(var(--fill-angle, 135deg) * 0.6),
+        rgba(255, 0, 100, 0.6) var(--fill-angle, 135deg),
+        transparent var(--fill-angle, 135deg)
+    );
+    border-radius: 200px 200px 0 0;
+    z-index: 3;
+    transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: blur(2px);
+}
+
+/* Enhanced Needle with Glow */
+.gauge-needle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 160px;
+    background: linear-gradient(to bottom, 
+        #ffffff 0%, 
+        #e74c3c 20%, 
+        #c0392b 80%, 
+        #ffffff 100%);
+    border-radius: 4px;
+    transform-origin: bottom center;
+    transform: translate(-50%, -100%) rotate(var(--needle-angle, 45deg));
+    z-index: 8;
+    box-shadow: 
+        0 0 20px rgba(231, 76, 60, 0.8),
+        0 8px 25px rgba(0, 0, 0, 0.6);
+    transition: transform 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gauge-needle::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    background: radial-gradient(circle, #ffffff, #e74c3c);
+    border-radius: 50%;
+    box-shadow: 
+        0 0 15px rgba(231, 76, 60, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.4);
+    animation: needleGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes needleGlow {
+    0% { box-shadow: 0 0 15px rgba(231, 76, 60, 0.8), 0 0 30px rgba(255, 255, 255, 0.4); }
+    100% { box-shadow: 0 0 25px rgba(231, 76, 60, 1), 0 0 40px rgba(255, 255, 255, 0.6); }
+}
+
+.gauge-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35px;
+    height: 35px;
+    background: radial-gradient(circle, #ffffff, #34495e);
+    border: 3px solid #e74c3c;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    box-shadow: 
+        0 0 20px rgba(231, 76, 60, 0.6),
+        0 8px 25px rgba(0, 0, 0, 0.4),
+        inset 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Neon Style Labels */
+.speedometer-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 60px;
+    position: relative;
+}
+
+.label {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.label.low { 
+    background: linear-gradient(135deg, #0d7377, #14a085);
+    color: #ffffff;
+    box-shadow: 
+        0 0 20px rgba(13, 115, 119, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.label.moderate { 
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: #ffffff;
+    box-shadow: 
+        0 0 20px rgba(243, 156, 18, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.label.high { 
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: #ffffff;
+    box-shadow: 
+        0 0 20px rgba(231, 76, 60, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Glowing Percentage Display */
+.speedometer-value {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: 30px;
+    color: #ffffff;
+    text-shadow: 
+        0 0 30px rgba(255, 255, 255, 0.8),
+        0 0 60px rgba(0, 255, 255, 0.4);
+    animation: valueGlow 3s ease-in-out infinite alternate;
+    position: relative;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.speedometer-value::after {
+    content: '%';
+    position: absolute;
+    right: -40px;
+    top: 20px;
+    font-size: 2.5rem;
+    opacity: 0.7;
+}
+
+@keyframes valueGlow {
+    0% { 
+        text-shadow: 
+            0 0 30px rgba(255, 255, 255, 0.8),
+            0 0 60px rgba(0, 255, 255, 0.4);
+        transform: scale(1);
+    }
+    100% { 
+        text-shadow: 
+            0 0 40px rgba(255, 255, 255, 1),
+            0 0 80px rgba(0, 255, 255, 0.8),
+            0 0 120px rgba(255, 165, 0, 0.3);
+        transform: scale(1.05);
+    }
+}
+
+.match-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 40px auto 0;
+    line-height: 1.7;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px 35px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Ambient Light Effect */
+.performance-rings {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+    z-index: 1;
+}
+
+.ring {
+    position: absolute;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: ringPulse 4s ease-in-out infinite;
+}
+
+.ring-1 {
+    width: 100%;
+    height: 100%;
+    animation-delay: 0s;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.ring-2 {
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    animation-delay: 1.3s;
+    border-color: rgba(255, 165, 0, 0.2);
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.2);
+}
+
+.ring-3 {
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    animation-delay: 2.6s;
+    border-color: rgba(255, 0, 100, 0.2);
+    box-shadow: 0 0 20px rgba(255, 0, 100, 0.2);
+}
+
+@keyframes ringPulse {
+    0%, 100% { 
+        opacity: 0.3; 
+        transform: scale(1);
+    }
+    50% { 
+        opacity: 0.7; 
+        transform: scale(1.1);
+    }
+}
+
+/* Skills Breakdown */
+.skills-breakdown {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.skills-breakdown h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.skills-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.skills-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+/* Required Skills */
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.skill-item:last-child {
+    border-bottom: none;
+}
+
+.skill-name {
+    font-weight: 500;
+    color: #333;
+}
+
+.skill-priority {
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.skill-priority.high {
+    background: rgba(255, 71, 87, 0.1);
+    color: #ff4757;
+}
+
+.skill-priority.medium {
+    background: rgba(255, 165, 2, 0.1);
+    color: #ffa502;
+}
+
+.skill-priority.low {
+    background: rgba(46, 213, 115, 0.1);
+    color: #2ed573;
+}
+
+/* Profile Skills */
+.profile-skill-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.profile-skill-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-match {
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.skill-match.matched {
+    background: rgba(46, 213, 115, 0.1);
+    color: #2ed573;
+}
+
+.skill-match.partial {
+    background: rgba(255, 165, 2, 0.1);
+    color: #ffa502;
+}
+
+.skill-match.low {
+    background: rgba(255, 71, 87, 0.1);
+    color: #ff4757;
+}
+
+.skill-sources {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.source {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.source-icon {
+    font-size: 1.2rem;
+    width: 24px;
+    text-align: center;
+}
+
+.source-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    min-width: 90px;
+    color: #555;
+}
+
+.source-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.source-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 10px;
+    transition: width 1.5s ease;
+    animation: fillBar 2s ease-out;
+}
+
+@keyframes fillBar {
+    from { width: 0%; }
+    to { width: var(--width); }
+}
+
+/* Recommendations */
+.recommendations-section {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.recommendations-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.recommendation-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.rec-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.recommendation-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recommendation-card p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.rec-priority {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.rec-priority.high {
+    background: rgba(255, 71, 87, 0.1);
+    color: #ff4757;
+}
+
+.rec-priority.medium {
+    background: rgba(255, 165, 2, 0.1);
+    color: #ffa502;
+}
+
+/* Action Section */
+.action-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-outline {
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.btn-secondary:hover {
+    background: rgba(102, 126, 234, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #667eea;
+    border-color: #667eea;
+}
+
+.btn-outline:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .job-header {
+        padding: 30px 25px;
+    }
+    
+    .job-title-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .job-title {
+        font-size: 2rem;
+    }
+    
+    .skills-meter-section {
+        padding: 40px 25px;
+    }
+    
+    .speedometer {
+        width: 250px;
+        height: 170px;
+    }
+    
+    .speedometer-value {
+        font-size: 2.5rem;
+    }
+    
+    .skills-breakdown {
+        padding: 30px 25px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .skills-card {
+        padding: 25px 20px;
+    }
+    
+    .source {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .source-name {
+        min-width: 80px;
+        font-size: 0.85rem;
+    }
+    
+    .recommendations-section {
+        padding: 30px 25px;
+    }
+    
+    .recommendations-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .job-header,
+    .skills-meter-section,
+    .skills-breakdown,
+    .recommendations-section {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .job-title {
+        font-size: 1.8rem;
+    }
+    
+    .speedometer {
+        width: 200px;
+        height: 140px;
+    }
+    
+    .speedometer-value {
+        font-size: 2rem;
+    }
+    
+    .gauge-needle {
+        height: 90px;
+    }
+    
+    .skills-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .skill-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .source {
+        gap: 6px;
+    }
+    
+    .source-name {
+        min-width: 70px;
+        font-size: 0.8rem;
+    }
+    
+    .source-bar {
+        height: 6px;
+    }
+}
+
+/* Animation Classes */
+.animate-speedometer {
+    animation: speedometerAnimation 2s ease-out;
+}
+
+@keyframes speedometerAnimation {
+    from {
+        --needle-angle: 0deg;
+    }
+    to {
+        --needle-angle: var(--final-angle);
+    }
+}
+
+/* Loading State */
+.loading-state {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(102, 126, 234, 0.3);
+    border-top: 2px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+button:focus,
+.btn-primary:focus,
+.btn-secondary:focus,
+.btn-outline:focus {
+    outline: 3px solid rgba(102, 126, 234, 0.5);
+    outline-offset: 2px;
+}

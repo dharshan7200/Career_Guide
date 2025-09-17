@@ -152,12 +152,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const skillCount = job["Matched Skill Count"] || 0;
             
             jobListHtml += `
-                <li style="counter-increment: job-counter; background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 25px; margin-bottom: 20px; border-radius: 15px; position: relative; padding-left: 60px; transition: transform 0.3s ease;" 
+                <li style="counter-increment: job-counter; background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 25px; margin-bottom: 20px; border-radius: 15px; position: relative; padding-left: 60px; transition: transform 0.3s ease; cursor: pointer;" 
                     onmouseover="this.style.transform='translateX(10px)'" 
-                    onmouseout="this.style.transform='translateX(0)'">
+                    onmouseout="this.style.transform='translateX(0)'"
+                    onclick="navigateToJobDetail('${jobTitle}', ${Math.round(skillCount * 15 + 60)})">
                     <div style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: rgba(255, 255, 255, 0.2); width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1rem;"></div>
-                    <div style="font-size: 1.3rem; font-weight: 600; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
-                        ${jobTitle}
+                    <div style="font-size: 1.3rem; font-weight: 600; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                        <span style="text-decoration: underline;">${jobTitle}</span>
                         <span style="background: rgba(255, 255, 255, 0.2); padding: 4px 8px; border-radius: 12px; font-size: 0.8rem;">${skillCount} skills matched</span>
                     </div>
                     <div style="opacity: 0.9; line-height: 1.5;">

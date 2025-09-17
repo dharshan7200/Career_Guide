@@ -132,6 +132,10 @@ def student():
 def clg():
     return render_template('clg.html')
 
+@app.route('/job-detail')
+def job_detail():
+    return render_template('job-detail.html')
+
 @app.route('/classification', methods=['POST'])
 def classify():
     """API Endpoint to classify career based on scores."""

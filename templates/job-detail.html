@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Analysis - Career Guide</title>
+    <link rel="stylesheet" href="static\css\job-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🎯</span>
+                Navigate Career Change with Up-To-Date Guidance
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="job-detail-main">
+        <div class="container">
+            <!-- Job Header -->
+            <section class="job-header">
+                <div class="job-title-section">
+                    <div class="company-logo">
+                        <span class="logo-placeholder">🏢</span>
+                    </div>
+                    <div class="job-info">
+                        <h1 class="job-title" id="jobTitle">Human Resources Specialists</h1>
+                        <p class="job-subtitle">Based on your skills and experience</p>
+                        <div class="job-tags">
+                            <span class="tag">Full-time</span>
+                            <span class="tag">Remote Friendly</span>
+                            <span class="tag">2 skills matched</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Match Speedometer -->
+            <section class="skills-meter-section">
+                <div class="meter-container">
+                    <h2>Overall Skills Match</h2>
+                    <div class="speedometer-wrapper">
+                        <div class="speedometer">
+                            <div class="performance-rings">
+                                <div class="ring ring-1"></div>
+                                <div class="ring ring-2"></div>
+                                <div class="ring ring-3"></div>
+                            </div>
+                            <div class="speedometer-gauge">
+                                <div class="gauge-bg"></div>
+                                <div class="gauge-fill" id="gaugeFill"></div>
+                                <div class="gauge-needle" id="gaugeNeedle"></div>
+                                <div class="gauge-center"></div>
+                            </div>
+                            <div class="speedometer-labels">
+                                <span class="label low">Low</span>
+                                <span class="label moderate">Moderate</span>
+                                <span class="label high">High</span>
+                            </div>
+                            <div class="speedometer-value" id="speedometerValue" data-percentage="75">75%</div>
+                        </div>
+                    </div>
+                    <p class="match-description">You have a strong match for this position based on your comprehensive profile analysis across multiple skill domains</p>
+                </div>
+            </section>
+
+            <!-- Skills Breakdown -->
+            <section class="skills-breakdown">
+                <h2>Skills Analysis</h2>
+                <div class="skills-grid">
+                    
+                    <!-- Required Skills -->
+                    <div class="skills-card">
+                        <h3>Required Skills</h3>
+                        <div class="required-skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Data Analysis</span>
+                                <span class="skill-priority high">High Priority</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Communication</span>
+                                <span class="skill-priority high">High Priority</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Project Management</span>
+                                <span class="skill-priority medium">Medium Priority</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Team Leadership</span>
+                                <span class="skill-priority medium">Medium Priority</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Strategic Planning</span>
+                                <span class="skill-priority low">Low Priority</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Your Skills Assessment -->
+                    <div class="skills-card">
+                        <h3>Your Skills Profile</h3>
+                        <div class="profile-skills-list">
+                            <div class="profile-skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Data Analysis</span>
+                                    <span class="skill-match matched">85% Match</span>
+                                </div>
+                                <div class="skill-sources">
+                                    <div class="source">
+                                        <span class="source-icon">🎓</span>
+                                        <span class="source-name">Certification</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 90%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="source">
+                                        <span class="source-icon">📋</span>
+                                        <span class="source-name">Assessment</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 75%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="source">
+                                        <span class="source-icon">💼</span>
+                                        <span class="source-name">Internship</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="source">
+                                        <span class="source-icon">🔧</span>
+                                        <span class="source-name">Project</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 95%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile-skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Communication</span>
+                                    <span class="skill-match matched">78% Match</span>
+                                </div>
+                                <div class="skill-sources">
+                                    <div class="source">
+                                        <span class="source-icon">🎓</span>
+                                        <span class="source-name">Certification</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 70%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="source">
+                                        <span class="source-icon">📋</span>
+                                        <span class="source-name">Assessment</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 85%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="source">
+                                        <span class="source-icon">💼</span>
+                                        <span class="source-name">Internship</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 75%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="source">
+                                        <span class="source-icon">🔧</span>
+                                        <span class="source-name">Project</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile-skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Project Management</span>
+                                    <span class="skill-match partial">45% Match</span>
+                                </div>
+                                <div class="skill-sources">
+                                    <div class="source">
+                                        <span class="source-icon">🎓</span>
+                                        <span class="source-name">Certification</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 30%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="source">
+                                        <span class="source-icon">📋</span>
+                                        <span class="source-name">Assessment</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 55%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="source">
+                                        <span class="source-icon">💼</span>
+                                        <span class="source-name">Internship</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 40%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="source">
+                                        <span class="source-icon">🔧</span>
+                                        <span class="source-name">Project</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 55%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile-skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Team Leadership</span>
+                                    <span class="skill-match low">25% Match</span>
+                                </div>
+                                <div class="skill-sources">
+                                    <div class="source">
+                                        <span class="source-icon">🎓</span>
+                                        <span class="source-name">Certification</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 15%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="source">
+                                        <span class="source-icon">📋</span>
+                                        <span class="source-name">Assessment</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 35%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="source">
+                                        <span class="source-icon">💼</span>
+                                        <span class="source-name">Internship</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 20%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="source">
+                                        <span class="source-icon">🔧</span>
+                                        <span class="source-name">Project</span>
+                                        <div class="source-bar">
+                                            <div class="source-fill" style="width: 30%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recommendations -->
+            <section class="recommendations-section">
+                <h2>Improvement Recommendations</h2>
+                <div class="recommendations-grid">
+                    <div class="recommendation-card">
+                        <div class="rec-icon">📚</div>
+                        <h3>Skill Development</h3>
+                        <p>Focus on improving Project Management and Team Leadership skills through online courses</p>
+                        <div class="rec-priority high">High Priority</div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="rec-icon">🏆</div>
+                        <h3>Certifications</h3>
+                        <p>Consider getting PMP or Agile certifications to boost your project management credentials</p>
+                        <div class="rec-priority medium">Medium Priority</div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="rec-icon">💡</div>
+                        <h3>Experience Building</h3>
+                        <p>Take on leadership roles in current projects or volunteer for team lead positions</p>
+                        <div class="rec-priority medium">Medium Priority</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Action Buttons -->
+            <section class="action-section">
+                <div class="action-buttons">
+                    <button class="btn-primary">Apply for Position</button>
+                    <button class="btn-secondary">Save Job</button>
+                    <button class="btn-outline" onclick="goBack()">Back to Results</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="\static\script\script_clg.js"></script>
+</body>
+</html>
