@@ -6,3 +6,5 @@ numpy
 PyMuPDF
 plotly
 gunicorn
+networkx
+matplotlib
